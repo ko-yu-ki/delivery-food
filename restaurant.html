@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food-Delivery - доставка еды на дом</title>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic" 
+      rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css ">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Шапка сайте -->
+      <header class="header">
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+          <img src="img\logo.svg" alt="Logo">
+        </a>
+        <!-- Поле адреса -->
+        <input type="search" class="input input-address" placeholder="Адрес доставки">
+        <div class="buttons">
+          <button class="button button-primary">
+            <img src="img/user.svg" alt="user" class="button-icon">
+            <span class ="button-text">Войти</span>            
+          </button>
+          <button class="button" id="cart-button">
+            <img src="img/shopping-сart.svg" alt="shopping cart" class="button-icon">
+            <span class ="button-text">Корзина</span> 
+          </button>
+        </div>
+      </header>
+    </div>
+    <main class="main">
+      <div class="container">
+        <section class="restaurants">
+          <div class="section-heading">
+            <h2 class="section-title">Тануки</h2>
+            <div class="restaurant-info">
+              <div class="rating">
+                <img src ="img/star-icon.svg" alt="rating" class="rating-star">
+                5.0
+              </div>
+                <span class="category">Японская кухня</span> 
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card wow fadeInUp" data-wow-delay="0.2s">
+              <img src="img/roll1.jpg" alt="Пицца плюс" class="card-image card-image-item">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+
+                  <span class="ingridients">Рис, угорь, соус унаги, кунжут, водоросли нори.</span>
+                </div> <!-- card-info-->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div> <!-- card-text -->
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.4s">
+              <img src="img/roll2.jpg" alt="Тануки" class="card-image">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Калифорния лосось стандарт</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+                  <span class="ingridients">Рис, лосось, огурец, майонез, икра масаго, водоросли нори.</span>
+                </div> <!-- card-info-->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div><!-- card-text -->
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.6s">
+              <img src="img/roll3.jpg" alt="FoodBand" class="card-image">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Окинава стандарт</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+                  <span class="ingridients">Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</span>
+                </div> <!-- card-info-->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div> <!-- card-text -->
+            </div>
+              <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/roll4.jpg" alt="Жадина-пицца" class="card-image">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Цезарь маки XL</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+                  <span class="ingridients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</span>
+                </div> <!-- card-info -->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div> <!-- card-text -->
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.4s">
+              <img src="img/roll5.jpg" alt="Точка еды" class="card-image">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Ясай маки стандарт 185г</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+                  <span class="ingridients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</span>
+                </div> <!-- card-info-->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div> <!-- card-text -->
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay="0.6s">
+              <img src="img/roll6.jpg" alt="PizzaBurger" class="card-image">
+              <div class="card-text">
+                <div class="card-heading">
+                  <h3 class="card-title card-title-reg">Ролл с креветкой стандарт</h3>
+                </div>
+                <!-- card-heading-->
+                <div class="card-info">
+                  <span class="ingridients">Рис, водоросли, креветки отварные, сыр сливочный, огурцы</span>
+                </div> <!-- card-info-->
+                <button class="button button-primary">
+                  <span class="button-card-text">В корзину</span>
+                  <img src="img/shopping-cart-white.svg" alt="В корзину" class="card-button-image">
+                </button>
+                <strong class="card-price-bold">250 ₽</strong>
+              </div> <!-- card-text -->
+            </div>
+          </div> <!-- /.cards -->
+        </section>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <img src="img/logo.svg" alt="logo" class="logo footer-logo">
+          <nav class="footer-nav">
+            <a href="#" class="footer-link">Ресторанам</a>
+            <a href="#" class="footer-link">Курьерам</a>
+            <a href="#" class="footer-link">Пресс-центр</a>
+            <a href="#" class="footer-link">Контакты</a>
+          </nav>
+          <div class="social-links">
+            <a href="#" class="social-link"><img src="img/instagram-social.svg" alt=instagram"></a>
+            <a href="#" class="social-link"><img src="img/facebook-social.svg" alt="facebook"></a>
+            <a href="#" class="social-link"><img src="img/vk-social.svg" alt="vkontakte"></a>
+          </div>
+        </div>
+      </div> <!-- footer-block-->
+    </footer>
+    <div class="modal animated fadeInDown">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Корзина</h3>
+          <div class="modal-close">&times</div>
+        </div>
+        <!-- /.modal-header -->
+        <div class="modal-body">
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+                <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+                <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+                <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+        </div> <!-- /.modal body-->
+        <div class="modal-footer">
+          <span class="modal-pricetag">750 ₽</span>
+          <div class="footer-buttons">
+            <button class="button button-primary">Офорить заказ</button>
+            <button class="button button-reject">Отмена</button>
+          </div>
+        </div> <!-- /.modal-footer-->
+      </div> <!-- /.modal-dialog-->
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
